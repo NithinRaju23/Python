@@ -1,0 +1,10 @@
+test1 = float(input("Enter marks for Test 1: "))
+test2 = float(input("Enter marks for Test 2: "))
+test3 = float(input("Enter marks for Test 3: "))
+marks = [test1, test2, test3]
+# Sort the marks in descending order
+marks.sort(reverse=True)
+best_two = marks[:2]
+average = sum(best_two) / 2
+print("\nBest two test marks:", best_two)
+print("Average of best two tests: {:.2f}".format(average))
