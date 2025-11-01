@@ -1,0 +1,11 @@
+
+num = input("Enter a number: ")
+if num == num[::-1]:
+    print(f"\n✅ The number {num} is a palindrome.")
+else:
+    print(f"\n❌ The number {num} is not a palindrome.")
+
+print("\nDigit occurrences:")
+for digit in sorted(set(num)):
+    count = num.count(digit)
+    print(f"Digit {digit} occurs {count} time(s).")
